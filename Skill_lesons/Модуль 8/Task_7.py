@@ -11,8 +11,9 @@ educational_grant, expenses = 10000, 12000
 months = 10
 inflation = 1.03
 total_expenses = expenses
-for _ in range(2, 11):
+for i in range(2, 11):
     expenses = expenses * inflation
     total_expenses += expenses
 parents_money = total_expenses - educational_grant * months
 print("Студенту надо попросить",round(parents_money, 2), "рублей")
+#крутая задача я её помню ещё из старого курса .
